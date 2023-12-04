@@ -6,33 +6,28 @@
   ];
 
   home.packages = with pkgs; [
-    (pkgs.waybar.overrideAttrs (oldAttrs: {
-        mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
-      })
-    )
     # nix
     nixpkgs-fmt
     # bash
     direnv
     alacritty
     neofetch
-    rclone
+    # rclone
     # nnn
     killall
-    # fonts
-    nerdfonts
-    noto-fonts
-    noto-fonts-emoji
-    font-awesome
-    jetbrains-mono
-    material-design-icons
+    # # fonts
+    # nerdfonts
+    # noto-fonts
+    # noto-fonts-emoji
+    # font-awesome
+    # jetbrains-mono
+    # material-design-icons
     # git
     git
     git-extras
     vscode
-    cinnamon.nemo
     # vscodium
-    # google-chrome
+    google-chrome
     chromium
     # stuff
     enpass
@@ -50,6 +45,10 @@
     # swww
     # fish
     # ironbar
+    # (pkgs.waybar.overrideAttrs (oldAttrs: {
+    #     mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
+    #   })
+    # )
   ];
 
   home.username = "${username}";
