@@ -1,0 +1,1 @@
+https://codeberg.org/TheHolyTachanka/nix-dots/src/branch/master/flake.nix
